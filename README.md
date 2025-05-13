@@ -12,7 +12,7 @@
 <h3 align="center"><b>
 	<a href="#Network">What is a Network?</a>
 	<span> • </span>
-	<a href="#TCP">What is TCP and IP Adress?</a>
+	<a href="#TCP">What are TCP and IP Addresses?</a>
 	<span> • </span>
 	<a href="#IPv4">IPv4 and Subnet Masks</a>
 	<span> • </span>
@@ -35,16 +35,16 @@
 What is a Network?
 </h2>
 
-In simple terms, a **Network** in computing is a group of two or more devices that can communicate amongst each other. By communicating we mean the possibility of **sending** and **receiving** data (or *packets*) - beetween different devices (or *nodes*).
+In simple terms, a **Network** in computing is a group of two or more devices that can communicate amongst each other. By communicating we mean the possibility of **sending** and **receiving** data (or *packets*) - between different devices (or *nodes*).
 
 The **Internet** is one of many examples of a network. It is probably the biggest network in the world, and connects many different nodes, making the sharing of data available between devices located anywhere in the world.
 
 The Internet is considered a **Public Network**. A Public Network allows for data transfer between any device connected to it, with no or very little control access. Usually, it is operated by a telecommunications company for the specific purpose of providing data transmission services to the public.
 
-On the other hand, we also have **Private Networks**. A Private Network allows for communication between devices that are restricted to a specific location or domain. The data transfer is not allowed for anyone unregistered, making it a much safer and controled environment. A Home Network is an example of private network. In there, you can connect to your personal printer when no one who isn't connected to your house's Wi-Fi, for example, could.
+On the other hand, we also have **Private Networks**. A Private Network allows for communication between devices that are restricted to a specific location or domain. The data transfer is not allowed for anyone unregistered, making it a much safer and controlled environment. A Home Network is an example of private network. In there, you can connect to your personal printer when no one who isn't connected to your house's Wi-Fi, for example, could.
 
 <h2 id="TCP">
-What is TCP and IP Adress?
+What are TCP and IP Addresses?
 </h2>
 
 In order to transfer data from one point to another across a network, many different types of protocols exist to ensure access, transport, security and stability. All these protocols work together, each one responsible for what we call a "layer" in the communication process.
@@ -53,7 +53,7 @@ In order to transfer data from one point to another across a network, many diffe
 
 **Transmission Control Protocol** (or **TCP**) is a communication standard protocol that enables nodes to communicate with each other. TCP is responsable for "breaking" data into small pieces (or packets), sending them over the network and then "rebuilding" them all back again while ensuring there is no data lost in the process.
 
-And how does it know where to send those pieces to? It does so utilizing an **Internet Protocol Address** (or **IP Adress**), which is a series of numbers used to identify any device connected to a network, either public or private.
+And how does it know where to send those pieces to? It does so utilizing an **Internet Protocol Address** (or **IP Address**), which is a series of numbers used to identify any device connected to a network, either public or private.
 
 TCP and IP are not the same thing, but rather **two separated protocols** that work together in order ensure data transfer between different devices.
 
@@ -67,13 +67,13 @@ An IPv4 address is a 32-bit number divided into four 8-bit blocks.
 
 Each of theses blocks range from `0` to `255` or, in binary, `00000000` to `11111111`.
 
-It is fundamental to learn how to visualize each IP Address in its binary form. The reason for it is the fact that every IP Address can be split into two separete pieces of information: the **Network** and the **Host** address.
+It is essential to understand how to convert an IP address to its binary form. The reason for it is the fact that every IP Address can be split into two separate pieces of information: the **Network** and the **Host** address.
 
 The portion corresponded to the **Network Address** is the identifier of the network in which the devices are connected. In order to communicate with each other, the nodes must be all in the same network, therefore, have the same Network Address portion of their respective IPs.
 
 The portion corresponded to the **Host Address** is the individual identifier of the device. Each node in the same network must have a singular, unique Host Address.
 
-In order to identify which part of the full IP Address correspond to the Network and which correspond to the Host, we musk apply to it a **Network Mask** (or **Subnet Mask**).
+In order to identify which part of the full IP Address correspond to the Network and which correspond to the Host, we must apply to it a **Network Mask** (or **Subnet Mask**).
 
 A Mask is also a 32-bit number divided into four 8-bit blocks. However, its purpose is to identify which bits are actively part of the Network identification. To do so, it marks with 1s the network bits.
 
@@ -228,3 +228,9 @@ In Net Practice, a routing table consists of only two simple informations:
 - **Destination** (on the left): it's the IP address that you want to send a package to, combined with the CIDR of that network: 190.3.2.252/30. If you don't want to specify a destination, or you want to make it available for the entire network, you can just set it to default or 0.0.0.0/0.
 
 - **Next Hop** (on the right): it's the IP address of the next router that you need to send the packages to in order to reach the destination-network.
+
+---
+
+> ✅ **Final Grade: 0/100**
+> Project made at [42 Lisboa](https://www.42lisboa.com/pt/)
+> 👤 Author: Stephan Rodrigues Lassaponari ([@Stezsz](https://github.com/Stezsz))
